@@ -1,0 +1,16 @@
+*.ini
+*.log
+*.txt
+*.crt
+*.key
+*.pem
+*.exe
+*.test
+*.json
+*.prof
+*.swp
+.idea/
+build
+.vscode/
+*.db
+go.sum
