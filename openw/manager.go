@@ -159,7 +159,7 @@ func (wm *WalletManager) OpenDB(appID string) (*StormDB, error) {
 	db, err = OpenStormDB(
 		wm.DBFile(appID),
 		storm.Batch(),
-		storm.BoltOptions(0600, &bolt.Options{Timeout: 3 * time.Second}),
+		storm.BoltOptions(0600, &bolt.Options{Timeout: 30 * time.Second}),
 	)
 	log.Debug("open storm db appID:", appID)
 	if err != nil {

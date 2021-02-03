@@ -19,6 +19,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/config"
 	"github.com/blocktree/ethereum-adapter/ethereum"
+	"github.com/blocktree/tron-adapter/tron"
 	"github.com/zzpu/openwallet/log"
 	"github.com/zzpu/openwallet/openwallet"
 	"strings"
@@ -41,7 +42,7 @@ func initAssetAdapter() {
 	//RegAssets(qtum.Symbol, qtum.NewWalletManager())
 	//RegAssets(nebulasio.Symbol, nebulasio.NewWalletManager())
 	//RegAssets(ontology.Symbol, ontology.NewWalletManager())
-	//RegAssets(virtualeconomy.Symbol, virtualeconomy.NewWalletManager())
+	RegAssets(tron.Symbol, tron.NewWalletManager())
 	RegAssets(ethereum.Symbol, ethereum.NewWalletManager())
 }
 
